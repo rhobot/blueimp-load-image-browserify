@@ -15,6 +15,8 @@
 /*jslint nomen: true, bitwise: true */
 /*global define, window, document */
 
+var window = require('global/window');
+
 (function (factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {

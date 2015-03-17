@@ -12,6 +12,8 @@
 /*jslint unparam: true */
 /*global define, window, console */
 
+var window = require('global/window');
+
 (function (factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {

@@ -11,6 +11,8 @@
 
 /*global define, window */
 
+var window = require('global/window');
+
 (function (factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {

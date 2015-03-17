@@ -16,6 +16,8 @@
 /*jslint continue:true */
 /*global define, window, DataView, Blob, Uint8Array, console */
 
+var window = require('global/window');
+
 (function (factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {

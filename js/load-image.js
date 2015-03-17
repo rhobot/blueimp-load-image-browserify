@@ -12,6 +12,8 @@
 /*jslint nomen: true */
 /*global define, window, document, URL, webkitURL, Blob, File, FileReader */
 
+var window = require('global/window');
+
 (function ($) {
     'use strict';
 
