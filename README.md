@@ -1,17 +1,23 @@
 # JavaScript Load Image
 
+This is a fork of blueimp-load-image that supports CommonJS/browserify
+and resolves the issue where it's broken if used in the server because of `window` object.
+
+Note that this is a temporary fix and still exposes `loadImage` object globally.
+
 ##Browserify usage
+```
 var loadImage = require('blueimp-load-image-browserify/js/load-image');
 
-    loadImage(file, function(canvas) {
-        //See the main repo for more instructions
-    });
+loadImage(file, function(canvas) {
+    //See the main repo for more instructions
+});
 
 //If you need to use any of the extra files, e.g. the iOS fix, just include them after the main require:
 
-    var loadImage = require('blueimp-load-image-browserify/js/load-image');
-    require('blueimp-load-image-browserify/js/load-image-ios');
-    
+var loadImage = require('blueimp-load-image-browserify/js/load-image');
+require('blueimp-load-image-browserify/js/load-image-ios');
+```
 
 ## Demo
 [JavaScript Load Image Demo](http://blueimp.github.io/JavaScript-Load-Image/)
